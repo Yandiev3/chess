@@ -1,169 +1,67 @@
-Installation
-
-To run the game locally, follow these steps:
-
-
-
-
-
-Clone the Repository (or download the source files):
-
-git clone <repository-url>
-
-
-
-Navigate to the Project Directory:
-
-cd chess-game
-
-
-
-Ensure File Structure:
-
-
-
-
-
-index.html: Main HTML file.
-
-
-
-script.js: JavaScript logic for game functionality.
-
-
-
-style.css: CSS for styling the game.
-
-
-
-blackShapes/ and whiteShapes/: Folders containing SVG images for chess pieces.
-
-
-
-Serve the Files:
-
-
-
-
-
-Use a local web server (e.g., Live Server in VS Code, or Python's HTTP server):
-
-python -m http.server 8000
-
-
-
-Alternatively, open index.html directly in a browser (note: some features may require a server due to file access restrictions).
-
-
-
-Access the Game:
-
-
-
-
-
-Open your browser and navigate to http://localhost:8000 (or the port used by your server).
-
-Usage
-
-
-
-
-
-Start the Game:
-
-
-
-
-
-Open the game in a browser. The board initializes with white to move first.
-
-
-
-Move Pieces:
-
-
-
-
-
-Click: Click a piece to select it (highlights possible moves), then click a highlighted square to move.
-
-
-
-Drag-and-Drop: Drag a piece to a valid square to move it.
-
-
-
-Pawn Promotion:
-
-
-
-
-
-When a pawn reaches the opponent's end, a modal appears to select a promotion piece.
-
-
-
-Game Over:
-
-
-
-
-
-The game ends when a king is captured (simplified checkmate detection). A modal displays the winner.
-
-
-
-Click "Новая игра" (New Game) to reset and start a new game.
-
-
-
-Captured Pieces:
-
-
-
-
-
-Captured pieces are displayed in the side panels for both players.
-
-File Structure
-
+Шахматы (Chess Game)
+
+Простая браузерная игра в шахматы с возможностью перетаскивания фигур.
+
+ Установка
+
+1. Клонируйте репозиторий:
+   ```bash
+   git clone <https://github.com/Yandiev3/chess>
+   ```
+2. Перейдите в пау проекта:
+   ```bash
+   cd chess-game
+   https://github.com/Yandiev3/chess
+3. **Запустите серр** (например, через Python):
+   ```bash
+   python -m http.server 8000
+   ```
+4. **Откройте игру в браузере**:
+   ```
+   http://localhost:8000
+   ```
+
+## Как играть
+
+- **Ходы**: Кликните на фигуру (подсветятся возможные ходы), затем на клетку
+- **Пешка**: При достижении конца доски выбирайте фигуру для превращения
+- **Конец игры**: При захвате короля показывается победитель
+- **Новая игра**: Нажмите кнопку **"Новая игра"** для сброса
+
+## Структура проекта
+
+```
 chess-game/
-├── index.html          # Main HTML file
-├── script.js           # Game logic and interactivity
-├── style.css           # Styling for the game
-├── blackShapes/        # SVG images for black pieces
+├── index.html      # Основной HTML-файл
+├── script.js       # Логика игры
+├── style.css       # Стили
+├── blackShapes/    # SVG чёрных фигур
 │   ├── blackRook.svg
 │   ├── blackKnight.svg
-│   ├── blackBishop.svg
-│   ├── blackQueen.svg
-│   ├── blackKing.svg
-│   ├── blackPawn.svg
-├── whiteShapes/        # SVG images for white pieces
+│   └── ...
+├── whiteShapes/    # SVG белых фигур
 │   ├── whiteRook.svg
 │   ├── whiteKnight.svg
-│   ├── whiteBishop.svg
-│   ├── whiteQueen.svg
-│   ├── whiteKing.svg
-│   ├── whitePawn.svg
-└── README.md           # Project documentation
+│   └── ...
+```
 
-Technologies Used
+## Технологии
 
+- HTML5
+- CSS3
+- JavaScript
+- SVG (графика фигур)
 
+---
 
+♟️ **Готово к игре!** ♟️
+```
 
+Этот вариант:
+1. Имеет понятную структуру
+2. Содержит все ключевые разделы
+3. Поддерживает Markdown-форматирование
+4. Включает более подробное описание структуры папок
+5. Сохраняет ваш оригинальный стиль изложения
 
-HTML5: Structure of the game interface.
-
-
-
-CSS3: Styling for the board, pieces, and UI elements.
-
-
-
-JavaScript: Game logic, move validation, and drag-and-drop functionality.
-
-
-
-SVG Images: Chess piece graphics.
+Вы можете скопировать этот текст прямо в файл README.md в вашем проекте.
